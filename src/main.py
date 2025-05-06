@@ -11,10 +11,10 @@ textract = boto3.client('textract', region_name='us-west-2')
 dynamodb = boto3.resource('dynamodb', region_name='us-west-2')
 ses = boto3.client('ses', region_name='us-west-2')
 
-# Environment variables - these should be set in Lambda configuration
+# Environment variables - these should be set in Lambda configuration  *****YOUR EMAIL HERE***
 DYNAMODB_TABLE = os.environ.get('DYNAMODB_TABLE', 'Receipts')
-SES_SENDER_EMAIL = os.environ.get('SES_SENDER_EMAIL', 'riced.neon@gmail.com')
-SES_RECIPIENT_EMAIL = os.environ.get('SES_RECIPIENT_EMAIL', 'riced.neon@gmail.com')
+SES_SENDER_EMAIL = os.environ.get('SES_SENDER_EMAIL', 'your_email')
+SES_RECIPIENT_EMAIL = os.environ.get('SES_RECIPIENT_EMAIL', 'your_email')
 # Note: Your sender email must be verified in SES before it can send emails
 
 def lambda_handler(event, context):
