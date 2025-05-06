@@ -21,12 +21,18 @@ This project sets up an automated pipeline for processing receipts using AWS ser
 ### 1. **S3 Bucket Creation**
 - Set up an S3 bucket to store uploaded receipts.
 
+![](assets/S3_receipts.png)
+
 ### 2. **DynamoDB Table Setup**
 - Created a DynamoDB table to store receipt metadata.
 - Defined a partition key and a sort key (string format) to organize the data.
 
+![](assets/DynamoDB_receipts.png)
+
 ### 3. **Email Identity with Amazon SES**
 - Configured Amazon Simple Email Service (SES) and verified an email identity for notifications.
+
+![](assets/SES_receipts.png)
 
 ### 4. **IAM Role and Permissions**
 Assigned the necessary AWS-managed policies to ensure proper access control:
@@ -35,6 +41,8 @@ Assigned the necessary AWS-managed policies to ensure proper access control:
 - `AmazonSESFullAccess`
 - `AmazonTextractFullAccess`
 - `AWSLambdaBasicExecutionRole`
+
+![](assets/IAM_receipts.png)
 
 ### 5. **Lambda Function Creation**
 - Developed an AWS Lambda function using Python 3.9 to process receipt data.
@@ -57,6 +65,7 @@ Assigned the necessary AWS-managed policies to ensure proper access control:
 ## Results
 The pipeline now successfully processes receipts, stores metadata in DynamoDB, and sends email notifications via SES. CloudWatch provides real-time monitoring, ensuring smooth operation.
 
+![](assets/Email_receipts.png)
 
 ### 📌 Credits  
 This project was built following a tutorial by [TechWithLucy](https://youtube.com/TechWithLucy).
