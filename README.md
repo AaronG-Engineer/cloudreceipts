@@ -7,6 +7,8 @@ CloudReceipts is an AI-powered receipt management system that automates expense 
 3️⃣ Data is stored in DynamoDB for tracking.  
 4️⃣ An email notification is sent via AWS SES.
 
+# CloudReceipts  
+**Tech Stack:** AWS | Lambda | DynamoDB | Textract | S3 | Python  
 
 
 # 📄 AWS Receipt Processing Pipeline  
