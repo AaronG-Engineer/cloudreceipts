@@ -80,6 +80,9 @@ export DYNAMODB_TABLE=expense-data
 
 ![](assets/Email_receipts.png)
 
-### 📌 Credits  
-This project was built following a tutorial by [TechWithLucy](https://youtube.com/TechWithLucy).
+---
+
+**Built with:** AWS Lambda | S3 | Textract | DynamoDB | SES | Terraform | Python
+
+**Tags:** `aws` `serverless` `ocr` `terraform` `lambda` `infrastructure-as-code` `expense-tracking` `automation`
 
